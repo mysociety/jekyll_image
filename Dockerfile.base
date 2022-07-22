@@ -1,0 +1,4 @@
+FROM python:3.10-buster
+
+COPY bin/install_ruby /
+RUN chmod u+x install_ruby && bash install_ruby
